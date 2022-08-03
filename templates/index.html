@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DuolingoByVelazquezLautaro</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../static/css/hojaDeEstilo.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<div class="marginParaMovil">
+		<nav class="Nav">
+			<div class="posicionNav">
+				<a href=""><img src="../static/imagen/cruz.png" class="imgSalir"></a>
+				<span class="lineaDeProgreso">
+					<span id="lineaDeProgreso2"></span>
+				</span>
+			</div>
+		</nav>
+		<div class="cuerpoPrincipal">
+			<span class="tipoLetter">Marca la profesion correcta</span>
+			<div class="lineaUnder">
+				<span id="contImagenes"></span>
+			</div>
+			<div class="contOpcion">
+				<input type="button" class="tipo2" id="opcion0" name="opcion" onclick="guardarClick0()">
+				<input type="button" class="tipo2" id="opcion1" name="opcion" onclick="guardarClick1()">
+				<input type="button" class="tipo2" id="opcion2" name="opcion" onclick="guardarClick2()">
+				<input type="button" class="tipo2" id="opcion3" name="opcion" onclick="guardarClick3()">
+			</div>
+		</div>
+	</div>	
+	<nav class="lineaTop" id="underNav">
+		<div class="cuerpoUnderNav">
+			<div id="correcto">
+				<img src="../static/imagen/tilde.png" class="claseImag">
+				<span class="tipoLetter2 colorverdadero">Tu respuesta es correcta</span>
+			</div>
+			<div id="falso">
+				<img src="../static/imagen/cruz2.png" class="claseImag">
+				<span class="tipoLetter2 colorfalso" id="completarFalso"></span>
+			</div>
+			<button class="tipo1" onclick="opcionElegida()" id="ocultarBoton">saltar</button>
+			<button class="tipo1" onclick="opcionElegida()" id="calificar">calificar</button>
+		</div>	
+	</nav>
+	<audio src="../static/sonido/correcto.mp3" id="sonidoCorrecto" type="audio/mpeg"></audio>
+	<audio src="../static/sonido/incorrecto.mp3" id="sonidoIncorrecto" type="audio/mpeg"></audio>
+	<script type="text/javascript" src="../static/js/java.js"></script>
+</body>
+</html>

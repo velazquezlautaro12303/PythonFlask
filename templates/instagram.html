@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+	{% for tweet in tweets %}
+	<div class="tweet">
+		<header>
+			<div class="header">
+				<img class="PhotoUser" src="../static/imagen/alf.jpg"/>
+				<span class="LabelUserTime">
+					<p class="LabelNameUser">{{ tweet.nameUser }}</p>
+					<p class="LabelType1">{{ tweet.dateTime }}</p>
+				</span>
+			</div>
+			<p class="LabelDescription">{{ tweet.description }}</p>
+		</header>
+		<div style="position: relative;">
+			<div class="flecha" style="left: 0;">
+				<img src="../static/imagen/Left.png" class="photoFlecha"/>
+			</div>
+			<div class="flecha" style="right: 0;">
+				<img src="../static/imagen/Right.png" class="photoFlecha"/>
+			</div>
+			<span style="display: flex; justify-content: center;">
+				<img src={{ tweet.pathPhotos[0] }} class="MainPhoto"/>
+			</span>
+		</div>
+		<footer>
+			<div class="OrderRowFlex" style="margin-bottom: 10px; margin-top: 10px;justify-content: space-between;">
+				<span class="OrderRowFlex">
+					<img src="../static/imagen/Like.png" width="23px"/>
+					<p class="LabelType1">{{ CountLikes }} Me gusta</p>
+				</span>
+				<div class="OrderRowFlex">
+					<p class="LabelType1" style="cursor:pointer;"><u>{{ CountComment }} comentarios</u></p>
+					<p class="LabelType1" style="margin-left: 7px; cursor:pointer;"><u>{{ CountShare }} veces compartido</u></p>
+				</div>
+			</div>
+			<div class="OrderRowFlex" style="justify-content: space-between;">
+				<button>
+					<img src="../static/imagen/Like.png" width="23px"/>
+					<p>Me gusta</p>
+				</button>
+				<button>
+					<img src="../static/imagen/Comment.png" width="23px"/>
+					<p>Comentario</p>
+				</button>
+				<button>
+					<img src="../static/imagen/Share.png" width="23px"/>
+					<p>Compartir</p>
+				</button>
+			</div>
+		</footer>
+	</div>
+	{% endfor %}
+</body>
+</html>

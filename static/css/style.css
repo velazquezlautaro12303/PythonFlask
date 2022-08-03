@@ -1,0 +1,103 @@
+.tweet
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: white;
+	border-color: gray;
+	max-width: 370px;
+	padding-top: 4px;
+	padding-bottom: 15px;
+}
+header
+{
+	padding-left: 2px;
+	padding-top: 2px;
+	width: 100%;
+}
+.header
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.PhotoUser
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.LabelNameUser
+{
+	color: black;
+	font-size: 14px;
+}
+.LabelUserTime
+{
+	margin-left: 4px;
+}
+p
+{
+	margin: 0;
+	padding: 0;
+}
+.LabelDescription
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+}
+.flecha
+{
+	position: absolute; 
+	height: 100%; 
+	display: flex; 
+	align-items: center;
+}
+.photoFlecha
+{
+	width: 30px;
+}
+.MainPhoto
+{
+	background-color: black;
+	height: 360px;
+}
+button
+{
+	display: flex;
+	flex-direction: row;
+	width: 110px;
+	height: 45px;
+	align-items: center;
+	background-color: transparent;
+	cursor:pointer;
+}
+footer
+{
+	display: flex;
+	flex-direction: column;
+	height: 60px;
+	justify-content: center;
+	padding: 8px;
+}
+.OrderRowFlex
+{
+	display: flex;
+	flex-direction: row;			
+	align-items: center;
+}
+.LabelType1
+{
+	color: black;
+	font-size: 11px;
+}
